@@ -58,7 +58,7 @@ public class MyView extends View {
                     currentPic.setY(event.getY());
                     invalidate();
                 }
-                return false;
+                return true;
             case MotionEvent.ACTION_UP:
                 if (currentBitmap != null) {
                     Pic currentPic = new Pic(currentBitmap, event.getX(), event.getY());

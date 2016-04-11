@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Log.d("ART",s);
         }
         ListView listView = (ListView) findViewById(R.id.list_view);
-        adapter = new MyAdapter(getApplication(),data);
+        adapter = new MyAdapter(getContentResolver(),getApplication(),data);
         listView.setAdapter(adapter);
         myView = (MyView) findViewById(R.id.my_view);
         listView.setOnItemClickListener(this);
